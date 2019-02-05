@@ -5,8 +5,108 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TicTacToeWPFVersion"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
+        Title="TicTacToe WPF Version" Height="450" Width="360" Background="LightBlue" WindowStartupLocation="CenterScreen" >
+
+    <Grid >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="5*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+    
+    <WrapPanel Grid.Row="0" HorizontalAlignment="Center" Margin="0,10,0,0">
+            <Border Width="110" Height="110" BorderBrush="Black" BorderThickness="3">
+                <Canvas>
+                    <Label x:Name="taken00" Width="105" Height="105" Background="PaleVioletRed" FontFamily="SegoeUI" FontSize="60" HorizontalContentAlignment="Center" VerticalContentAlignment="Bottom"  />
+                    <Button x:Name="x00Button" Width="30" Height="30" Background="Red" Content="X" FontFamily="SegoeUI" FontSize="16" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Canvas.Left="10" Canvas.Top="6" BorderBrush="Black" BorderThickness=".5" Click="X00Button_Click"/>
+                    <Button x:Name="y00Button" Width="30" Height="30" Background="red" Content="Y" FontFamily="SegoeUI" FontSize="16" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Canvas.Left="64" Canvas.Top="6" BorderBrush="Black" BorderThickness=".5" Click="Y00Button_Click" />
+                    <!--<Label x:Name="y00" Width="30" Height="30" Background="yellow" Content="Y" FontFamily="SegoeUI" FontSize="16" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Canvas.Left="64" Canvas.Top="6" BorderBrush="Black" BorderThickness=".5" />-->
+                    <!--<Label x:Name="x00" Width="30" Height="30" Background="yellow" Content="X" FontFamily="SegoeUI" FontSize="16" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Canvas.Left="10" Canvas.Top="6" BorderBrush="Black" BorderThickness=".5"/>-->
+                </Canvas>
+            </Border>
+            <Border Width="110" Height="110" BorderBrush="Black" BorderThickness="3">
+                <Canvas>
+                    <Label x:Name="taken10" Width="105" Height="105" Background="PaleVioletRed" FontFamily="SegoeUI" FontSize="60" HorizontalContentAlignment="Center" VerticalContentAlignment="Bottom" />
+                    <Button x:Name="x10Button" Width="30" Height="30" Background="Red" Content="X" FontFamily="SegoeUI" FontSize="16" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Canvas.Left="10" Canvas.Top="6" BorderBrush="Black" BorderThickness=".5" Click="X10Button_Click"/>
+                    <Button x:Name="y10Button" Width="30" Height="30" Background="red" Content="Y" FontFamily="SegoeUI" FontSize="16" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Canvas.Left="64" Canvas.Top="6" BorderBrush="Black" BorderThickness=".5" Click="Y10Button_Click" />
+                    <!--<Label x:Name="y10" Width="30" Height="30" Background="yellow" Content="Y" FontFamily="SegoeUI" FontSize="16" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Canvas.Left="64" Canvas.Top="6" BorderBrush="Black" BorderThickness=".5"/>-->
+                    <!--<Label x:Name="x10" Width="30" Height="30" Background="yellow" Content="X" FontFamily="SegoeUI" FontSize="16" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Canvas.Left="10" Canvas.Top="6" BorderBrush="Black" BorderThickness=".5"/>-->
+                </Canvas>
+            </Border>
+            <Border Width="110" Height="110" BorderBrush="Black" BorderThickness="3">
+                <Canvas>
+                    <Label x:Name="taken20" Width="105" Height="105" Background="PaleVioletRed" FontFamily="SegoeUI" FontSize="60" HorizontalContentAlignment="Center" VerticalContentAlignment="Bottom" />
+                    <Button x:Name="x20Button" Width="30" Height="30" Background="Red" Content="X" FontFamily="SegoeUI" FontSize="16" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Canvas.Left="10" Canvas.Top="6" BorderBrush="Black" BorderThickness=".5" Click="X20Button_Click"/>
+                    <Button x:Name="y20Button" Width="30" Height="30" Background="red" Content="Y" FontFamily="SegoeUI" FontSize="16" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Canvas.Left="64" Canvas.Top="6" BorderBrush="Black" BorderThickness=".5" Click="Y20Button_Click" />
+                    <!--<Label x:Name="y20" Width="30" Height="30" Background="yellow" Content="Y" FontFamily="SegoeUI" FontSize="16" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Canvas.Left="64" Canvas.Top="6" BorderBrush="Black" BorderThickness=".5"/>-->
+                    <!--<Label x:Name="x20" Width="30" Height="30" Background="yellow" Content="X" FontFamily="SegoeUI" FontSize="16" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Canvas.Left="10" Canvas.Top="6" BorderBrush="Black" BorderThickness=".5"/>-->
+                </Canvas>
+            </Border>
+            <Border Width="110" Height="110" BorderBrush="Black" BorderThickness="3">
+                <Canvas>
+                    <Label x:Name="taken01" Width="105" Height="105" Background="PaleVioletRed" FontFamily="SegoeUI" FontSize="60" HorizontalContentAlignment="Center" VerticalContentAlignment="Bottom" />
+                    <Button x:Name="x01Button" Width="30" Height="30" Background="Red" Content="X" FontFamily="SegoeUI" FontSize="16" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Canvas.Left="10" Canvas.Top="6" BorderBrush="Black" BorderThickness=".5" Click="X01Button_Click"/>
+                    <Button x:Name="y01Button" Width="30" Height="30" Background="red" Content="Y" FontFamily="SegoeUI" FontSize="16" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Canvas.Left="64" Canvas.Top="6" BorderBrush="Black" BorderThickness=".5" Click="Y01Button_Click" />
+                    
+                    <!--<Label x:Name="y01" Width="30" Height="30" Background="yellow" Content="Y" FontFamily="SegoeUI" FontSize="16" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Canvas.Left="64" Canvas.Top="6" BorderBrush="Black" BorderThickness=".5"/>-->
+                    <!--<Label x:Name="x01" Width="30" Height="30" Background="yellow" Content="X" FontFamily="SegoeUI" FontSize="16" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Canvas.Left="10" Canvas.Top="6" BorderBrush="Black" BorderThickness=".5"/>-->
+                </Canvas>
+            </Border>
+            <Border Width="110" Height="110" BorderBrush="Black" BorderThickness="3">
+                <Canvas>
+                    <Label x:Name="taken11" Width="105" Height="105" Background="PaleVioletRed" FontFamily="SegoeUI" FontSize="60" HorizontalContentAlignment="Center" VerticalContentAlignment="Bottom" />
+                    <Button x:Name="x11Button" Width="30" Height="30" Background="Red" Content="X" FontFamily="SegoeUI" FontSize="16" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Canvas.Left="10" Canvas.Top="6" BorderBrush="Black" BorderThickness=".5" Click="X11Button_Click"/>
+                    <Button x:Name="y11Button" Width="30" Height="30" Background="red" Content="Y" FontFamily="SegoeUI" FontSize="16" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Canvas.Left="64" Canvas.Top="6" BorderBrush="Black" BorderThickness=".5" Click="Y11Button_Click" />
+                    
+                    <!--<Label x:Name="y11" Width="30" Height="30" Background="yellow" Content="Y" FontFamily="SegoeUI" FontSize="16" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Canvas.Left="64" Canvas.Top="6" BorderBrush="Black" BorderThickness=".5"/>-->
+                    <!--<Label x:Name="x11" Width="30" Height="30" Background="yellow" Content="X" FontFamily="SegoeUI" FontSize="16" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Canvas.Left="10" Canvas.Top="6" BorderBrush="Black" BorderThickness=".5"/>-->
+                </Canvas>
+            </Border>
+            <Border Width="110" Height="110" BorderBrush="Black" BorderThickness="3">
+                <Canvas>
+                    <Label x:Name="taken21" Width="105" Height="105" Background="PaleVioletRed" FontFamily="SegoeUI" FontSize="60" HorizontalContentAlignment="Center" VerticalContentAlignment="Bottom" />
+                    <Button x:Name="x21Button" Width="30" Height="30" Background="Red" Content="X" FontFamily="SegoeUI" FontSize="16" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Canvas.Left="10" Canvas.Top="6" BorderBrush="Black" BorderThickness=".5" Click="X21Button_Click"/>
+                    <Button x:Name="y21Button" Width="30" Height="30" Background="red" Content="Y" FontFamily="SegoeUI" FontSize="16" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Canvas.Left="64" Canvas.Top="6" BorderBrush="Black" BorderThickness=".5" Click="Y21Button_Click" />
+                    
+                    <!--<Label x:Name="y21" Width="30" Height="30" Background="yellow" Content="Y" FontFamily="SegoeUI" FontSize="16" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Canvas.Left="64" Canvas.Top="6" BorderBrush="Black" BorderThickness=".5"/>-->
+                    <!--<Label x:Name="x21" Width="30" Height="30" Background="yellow" Content="X" FontFamily="SegoeUI" FontSize="16" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Canvas.Left="10" Canvas.Top="6" BorderBrush="Black" BorderThickness=".5"/>-->
+                </Canvas>
+            </Border>
+            <Border Width="110" Height="110" BorderBrush="Black" BorderThickness="3">
+                <Canvas>
+                    <Label x:Name="taken02" Width="105" Height="105" Background="PaleVioletRed" FontFamily="SegoeUI" FontSize="60" HorizontalContentAlignment="Center" VerticalContentAlignment="Bottom" />
+                    <Button x:Name="x02Button" Width="30" Height="30" Background="Red" Content="X" FontFamily="SegoeUI" FontSize="16" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Canvas.Left="10" Canvas.Top="6" BorderBrush="Black" BorderThickness=".5" Click="X02Button_Click"/>
+                    <Button x:Name="y02Button" Width="30" Height="30" Background="red" Content="Y" FontFamily="SegoeUI" FontSize="16" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Canvas.Left="64" Canvas.Top="6" BorderBrush="Black" BorderThickness=".5" Click="Y02Button_Click" />
+                    
+                    <!--<Label x:Name="y02" Width="30" Height="30" Background="yellow" Content="Y" FontFamily="SegoeUI" FontSize="16" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Canvas.Left="64" Canvas.Top="6" BorderBrush="Black" BorderThickness=".5"/>-->
+                    <!--<Label x:Name="x02" Width="30" Height="30" Background="yellow" Content="X" FontFamily="SegoeUI" FontSize="16" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Canvas.Left="10" Canvas.Top="6" BorderBrush="Black" BorderThickness=".5"/>-->
+                </Canvas>
+            </Border>
+            <Border Width="110" Height="110" BorderBrush="Black" BorderThickness="3">
+                <Canvas>
+                    <Label x:Name="taken12" Width="105" Height="105" Background="PaleVioletRed" FontFamily="SegoeUI" FontSize="60" HorizontalContentAlignment="Center" VerticalContentAlignment="Bottom" />
+                    <Button x:Name="x12Button" Width="30" Height="30" Background="Red" Content="X" FontFamily="SegoeUI" FontSize="16" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Canvas.Left="10" Canvas.Top="6" BorderBrush="Black" BorderThickness=".5" Click="X12Button_Click"/>
+                    <Button x:Name="y12Button" Width="30" Height="30" Background="red" Content="Y" FontFamily="SegoeUI" FontSize="16" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Canvas.Left="64" Canvas.Top="6" BorderBrush="Black" BorderThickness=".5" Click="Y12Button_Click" />
+                    
+                    <!--<Label x:Name="y12" Width="30" Height="30" Background="yellow" Content="Y" FontFamily="SegoeUI" FontSize="16" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Canvas.Left="64" Canvas.Top="6" BorderBrush="Black" BorderThickness=".5"/>-->
+                    <!--<Label x:Name="x12" Width="30" Height="30" Background="yellow" Content="X" FontFamily="SegoeUI" FontSize="16" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Canvas.Left="10" Canvas.Top="6" BorderBrush="Black" BorderThickness=".5"/>-->
+                </Canvas>
+            </Border>
+            <Border Width="110" Height="110" BorderBrush="Black" BorderThickness="3">
+                <Canvas>
+                    <Label x:Name="taken22" Width="105" Height="105" Background="PaleVioletRed" FontFamily="SegoeUI" FontSize="60" HorizontalContentAlignment="Center" VerticalContentAlignment="Bottom" />
+                    <Button x:Name="x22Button" Width="30" Height="30" Background="Red" Content="X" FontFamily="SegoeUI" FontSize="16" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Canvas.Left="10" Canvas.Top="6" BorderBrush="Black" BorderThickness=".5" Click="X22Button_Click"/>
+                    <Button x:Name="y22Button" Width="30" Height="30" Background="red" Content="Y" FontFamily="SegoeUI" FontSize="16" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Canvas.Left="64" Canvas.Top="6" BorderBrush="Black" BorderThickness=".5" Click="Y22Button_Click" />
+                    
+                    <!--<Label x:Name="y22" Width="30" Height="30" Background="yellow" Content="Y" FontFamily="SegoeUI" FontSize="16" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Canvas.Left="64" Canvas.Top="6" BorderBrush="Black" BorderThickness=".5"/>-->
+                    <!--<Label x:Name="x22" Width="30" Height="30" Background="yellow" Content="X" FontFamily="SegoeUI" FontSize="16" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Canvas.Left="10" Canvas.Top="6" BorderBrush="Black" BorderThickness=".5"/>-->
+                </Canvas>
+            </Border>
+        </WrapPanel>
         
+        <DockPanel Grid.Row="1">
+            <Button x:Name="newGame" Height="40" Width="Auto" Margin="10" Padding="10,0,10,0" Content="Play Again" FontFamily="SegoeUI" FontSize="30"
+                    BorderBrush="Black" BorderThickness="1" VerticalAlignment="Center" HorizontalAlignment="Center" Click="NewGame_Click"/>
+        </DockPanel>
     </Grid>
+
 </Window>
